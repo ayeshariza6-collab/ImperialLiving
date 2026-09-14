@@ -1,0 +1,144 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Imperial Living | Crafting Timeless Interiors</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+<div class="container">
+
+<a class="navbar-brand logo" href="{% url 'home' %}">Imperial Living</a>
+
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbar">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse justify-content-end"
+id="navbar">
+
+<ul class="navbar-nav">
+
+<li class="nav-item">
+<a class="nav-link active" href="{% url 'home' %}">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="{% url 'about' %}">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="{% url 'services' %}">Services</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="{% url 'portfolio' %}">Portfolio</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="{% url 'contact' %}">Contact</a>
+</li>
+
+</ul>
+
+<a href="{% url 'contact' %}" class="btn consultation-btn ms-4">
+Book Consultation
+</a>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- ================= HERO SECTION ================= -->
+
+<section class="hero">
+
+<div class="overlay">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-lg-8">
+
+<h1>
+Crafting<br>
+Timeless<br>
+Interiors
+</h1>
+
+<p>
+Luxury interior design that transforms
+ordinary spaces into extraordinary living
+experiences with elegance, comfort and
+lasting beauty.
+</p>
+
+<a href="{% url 'portfolio' %}" class="btn explore-btn">
+Explore Projects
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+<footer class="footer">
+
+<div class="container text-center">
+
+<h4 class="logo mb-3">Imperial Living</h4>
+
+<p>
+Crafting timeless interiors with elegance, luxury and innovation.
+</p>
+
+<p class="copyright">
+© 2026 Imperial Living. All Rights Reserved.
+</p>
+
+</div>
+
+</footer>
+
+</html>
